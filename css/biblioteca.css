@@ -1,0 +1,251 @@
+@import url('reset.css');
+
+*{margin:0; padding: 0;}
+
+
+/*---ESTILOS GENERALES--*/
+body{
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	font-family:Arial, Helvetica, Sans-serif;
+}
+
+a{text-decoration: none;color: #fff;}
+a:hover{text-decoration: underline;}
+
+
+
+/*---HEADER--*/
+header{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	
+	background: #31ccf7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #31ccf7 0%, #3587cd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31ccf7), color-stop(100%,#3587cd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #31ccf7 0%,#3587cd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31ccf7', endColorstr='#3587cd',GradientType=0 ); /* IE6-9 */
+}
+
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+header .img{
+	float: left;
+	padding: 11px 10px 0px 0px;
+	width: 100px;
+	height: 100px
+}
+
+header .logo{
+	color: #f2f2f2;
+	font-size: 30px;
+	line-height: 120px;
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+}
+
+header nav{
+	float: right;
+	padding: 40px 10px 0px 0px;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+.nav{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+	display: table;
+	float: right;
+}
+
+.nav > li {
+	float:left;
+}
+
+.nav li a {
+	background-color:#003;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size: 15px;
+	-webkit-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition:all 600ms ease;
+}
+
+.nav > li{
+	float: left;
+}
+
+.nav li a:hover {
+	background-color:#adc2cf;
+	text-align: center;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:130px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.icon-home2{
+	display: block;
+	position: relative;
+	top: 2px;
+	float: left;
+	right:8px;
+	margin-left: 10px;
+}
+
+/*---BARRA SOCIAL---*/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+		list-style: none;
+	}
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+ 
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-googleplus {background: #d95232;}
+.social ul li .icon-youtube {background: #ae181f;}
+.social ul li .icon-mail {background: #666666;}
+
+.social ul li a:hover {
+	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+/*---PIE DE PAGINA---*/
+#copyrigth{
+	float: left;
+	width: 1000px;
+	margin: 13px 0px;
+}
+
+#copyrigth p{
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.span4 {width: 320px;}
+
+.thumbnails {
+  margin-left: -20px;
+  list-style: none;
+  *zoom: 1;
+}
+
+.thumbnails:before,
+.thumbnails:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.thumbnails:after {clear: both;}
+
+.row-fluid .thumbnails {margin-left: 0;}
+
+.thumbnails > li {
+  float: left;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 25px;
+  border: 6px double #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a.thumbnail:hover {
+  border-color: #2e8bcc;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details{
+	background-color: #F1F1F1;
+	padding: 10px;
+	border: 1px solid #D9D9D9;
+	border-top: 0px;
+	text-align: justify;
+}
+
+.details h3{text-transform: capitalize;}
+
+h3{
+  margin: 12.5px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  line-height: 25px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+  text-align: center;
+  font-size: 30px;
+  font-weight:bold;
+}
+
+h3 {line-height: 25px;}

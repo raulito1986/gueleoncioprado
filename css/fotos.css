@@ -1,0 +1,197 @@
+@import url('reset.css');
+
+*{margin:0; padding: 0;}
+
+body{
+	background: #e8edf0;
+}
+
+/*---HEADER--*/
+header{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	
+	background: #31ccf7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #31ccf7 0%, #3587cd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31ccf7), color-stop(100%,#3587cd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #31ccf7 0%,#3587cd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #31ccf7 0%,#3587cd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31ccf7', endColorstr='#3587cd',GradientType=0 ); /* IE6-9 */
+}
+
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+header .img{
+	float: left;
+	padding: 11px 10px 0px 0px;
+	width: 100px;
+	height: 100px
+}
+
+header .logo{
+	color: #f2f2f2;
+	font-size: 30px;
+	line-height: 120px;
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+}
+
+header nav{
+	float: right;
+	line-height: 120px;
+}
+
+header nav a {
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding:5px 13px;
+    line-height:normal;
+    font-size:14px;
+    font-weight:bold;
+    font-family: "Times New Roman", Times, serif;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+    background:#003;
+    border-radius:50px;
+    text-decoration: none;
+}
+
+.header2 {
+    position: fixed;
+    height:60px;
+}
+ 
+.header2 .logo {
+    line-height:60px;
+    font-size:20px;
+}
+ 
+.header2 nav {
+    line-height:60px;
+}
+
+.header2 .img{
+	float: left;
+	padding: 5px 0px;
+	width: 50px;
+	height: 50px
+}
+
+.contenido p{margin-bottom: 1em;}
+/*---FIN HEADER---*/
+
+.contenido2{
+	width: 1000px;
+	margin:auto;
+	text-align: justify;
+}
+
+/*---BOTON ARRIBA---*/
+.content{
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.content p{
+	margin-bottom: 16px;
+}
+
+.ir-arriba{
+	display: inline-block;
+	padding: 10px;
+	background: #024959;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 15px;
+	bottom: 10px;
+	right: 10px;
+}
+
+li a{
+	font-size: 20px;
+	color: #000;
+}
+/*---FIN BOTON ARRIBA---*/
+
+
+/*---FOTOGRAFIAS---*/
+.fotos{
+	width: 1000px;
+	margin: auto;
+}
+
+#aniversario{
+	width: 980px;
+	margin: 10px auto;
+	float: left;
+}
+
+#marchas{
+	width: 980px;
+	margin: 10px auto;
+	float: left;
+}
+
+#actividades{
+	width: 980px;
+	margin: 10px auto;
+	float: left;
+}
+
+.miniatura{
+	float: left;
+	height: 90px;
+	width: 140px;
+	padding: 10px 10px 10px 10px; /*---up---*/ /*---rigth---*/ /*---down---*/ /*---left---*/
+}
+
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+		list-style: none;
+	}
+ 
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+ 
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-googleplus {background: #d95232;}
+.social ul li .icon-youtube {background: #ae181f;}
+.social ul li .icon-mail {background: #666666;}
+
+.social ul li a:hover {
+	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
